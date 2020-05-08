@@ -38,9 +38,10 @@ function addjs()
 add_action('wp_enqueue_scripts','addjs');
 
 
-
+function theme_setup(){
 add_theme_support('menus');
-
+}
+add_action('after_setup_theme','theme_setup');
 
 register_nav_menus(
 
