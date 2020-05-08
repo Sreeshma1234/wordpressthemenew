@@ -1,16 +1,16 @@
-		<?php get_header();?>
-		<?php $about = get_field('about');?>
-		<?php $a_few_accomplishments = get_field('a_few_accomplishments');?>
-		<?php $form = get_field('form');?>
-		<?php $things_i_can_do_headings = get_field('things_i_can_do_headings');?>
-		<?php $sidebar = get_field('sidebar');?>
-		<?php get_sidebar( 'primary' ); ?> 
-	 </section>
+<?php get_header();?>
+<?php get_sidebar( 'primary' ); ?> 
+</section>
 
 		<!-- Wrapper -->
 <div id="wrapper">
       <div id="main">
-
+	    <?php $about = get_field('about');?>
+		<?php $a_few_accomplishments = get_field('a_few_accomplishments');?>
+		<?php $form = get_field('form');?>
+		<?php $things_i_can_do_headings = get_field('things_i_can_do_headings');?>
+		<?php $sidebar = get_field('sidebar');?>
+		
 						<!-- One -->
 			  <section id="one">
 				 <div class="image main" data-position="center">
