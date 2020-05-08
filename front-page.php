@@ -4,9 +4,8 @@
 		<?php $form = get_field('form');?>
 		<?php $things_i_can_do_headings = get_field('things_i_can_do_headings');?>
 		<?php $sidebar = get_field('sidebar');?>
-		    <?php get_sidebar( 'primary' ); ?> 
-				
-		</section>
+		<?php get_sidebar( 'primary' ); ?> 
+	 </section>
 
 		<!-- Wrapper -->
 <div id="wrapper">
@@ -60,14 +59,10 @@
 								$image = get_sub_field('image');
 								$article_heading = get_sub_field('article_heading');
 								$article_para = get_sub_field('article_para');
-							
-							
-							
-							
 							?>
-							<article>
-								<a href="#" class="image"><img src="<?php bloginfo('template_directory');?>/images/pic01.jpg" alt="" /></a>
-								<div class="inner">
+							   <article>
+								 <a href="#" class="image"><img src="<?php bloginfo('template_directory');?>/images/pic01.jpg" alt="" /></a>
+								 <div class="inner">
 									<h4><?php echo $article_heading;?></h4>
 									<p><?php echo $article_para?></p>
 									</div>
@@ -84,11 +79,7 @@
 					<div class="container">
 						<h3><?php echo $form['contact_title'];?></h3>
 						<p><?php echo $form['contact_para'];?></p>
-						<form method="post" action="#">
-							<div class="row gtr-uniform">
-									<?php echo $form['contact_form'];?>
-							</div>
-						</form>
+							<?php echo $form['contact_form'];?>
 					</div>
 				</section>
 </div>
