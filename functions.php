@@ -43,6 +43,13 @@ add_theme_support('menus');
 }
 add_action('after_setup_theme','theme_setup');
 
+
+function theme_functions() {
+
+    add_theme_support( 'title-tag' );
+
+}add_action( 'after_setup_theme', 'theme_functions' );
+
 register_nav_menus(
 
     array(
