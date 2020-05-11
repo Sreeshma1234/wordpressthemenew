@@ -1,5 +1,5 @@
 <?php get_header();?>
-<?php get_sidebar( 'primary' ); ?> 
+<?php get_sidebar(); ?> 
 </section>
 
 		<!-- Wrapper -->
